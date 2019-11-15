@@ -1,0 +1,7 @@
+@import '~antd/dist/antd.css';
+
+.warpper {
+  background: #fff;
+  width: 400px;
+  box-shadow: 0 0 5px #666;
+}

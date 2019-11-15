@@ -1,0 +1,15 @@
+.list{
+  text-align: left;
+}
+.list ul{
+  padding-left: 0px;
+  margin: 0;
+}
+.list ul li{
+ list-style: none;
+ padding: 8px 20px;
+ border-top: 1px solid #eee;
+}
+.empty{
+  text-align: center;
+}
