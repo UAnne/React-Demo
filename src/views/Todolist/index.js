@@ -10,6 +10,17 @@ class Todolist extends React.Component {
       todos: []
     }
   }
+    // 删除单挑数据
+    deleteItem(id) {
+      let data = this.state.todos;
+      this.setState({
+        todos: data.filter((item, index) => {
+          if (item.id !== id) {
+            return item;
+          }
+        })
+      })
+    }
    // 添加单条数据
    addTodoList(value) {
     const id = Date.now();
@@ -31,11 +42,13 @@ class Todolist extends React.Component {
   render() {
     return (
       <div className="content">
+         <div>
           <h1>备忘录</h1>
-          <div className="warpper">
-            <Input addTodoList={this.addTodoList.bind(this)} />
-            <List todos={this.state.todos}/>
-          </div>
+            <div className="warpper">
+              <Input addTodoList={this.addTodoList.bind(this)} />
+              <List todos={this.state.todos} />
+            </div>
+         </div>
       </div>
     );
   }

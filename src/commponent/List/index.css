@@ -1,15 +1,30 @@
 .list{
   text-align: left;
 }
-.list ul{
+ul.list {
   padding-left: 0px;
   margin: 0;
 }
-.list ul li{
+ul.list li{
  list-style: none;
- padding: 8px 20px;
+ padding: 12px 20px;
+ font-size: 15px;
+ color: #000;
+ display: flex;
+ justify-content: space-between;
  border-top: 1px solid #eee;
+}
+.list ul li span{
+  /* padding-left: 4px;; */
 }
 .empty{
   text-align: center;
+  padding: 12px 0;
+  display: block;
+  border-top: 1px solid #eee;
+}
+.page{
+  border-top: 1px solid #eee;
+  display: block;
+  padding: 10px 20px;
 }

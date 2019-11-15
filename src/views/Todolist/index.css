@@ -1,8 +1,18 @@
 @import '~antd/dist/antd.css';
-
+.content{
+  /* background: #09d3ac; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  background-image: url(./../../images/timg.jpg);
+  background-position: center;
+  background-size: cover;
+}
 .warpper {
   background: #fff;
-  width: 400px;
+  width: 500px;
   box-shadow: 0 0 5px #666;
 }
 h1{
