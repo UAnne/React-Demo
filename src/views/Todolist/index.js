@@ -30,9 +30,12 @@ class Todolist extends React.Component {
 
   render() {
     return (
-      <div className="warpper">
-          <Input addTodoList={this.addTodoList.bind(this)} />
-          <List todos={this.state.todos}/>
+      <div className="content">
+          <h1>备忘录</h1>
+          <div className="warpper">
+            <Input addTodoList={this.addTodoList.bind(this)} />
+            <List todos={this.state.todos}/>
+          </div>
       </div>
     );
   }
